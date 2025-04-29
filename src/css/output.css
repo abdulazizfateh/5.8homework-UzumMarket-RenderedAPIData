@@ -278,6 +278,15 @@
   .h-\[400px\] {
     height: 400px;
   }
+  .h-\[450px\] {
+    height: 450px;
+  }
+  .h-\[500px\] {
+    height: 500px;
+  }
+  .h-\[600px\] {
+    height: 600px;
+  }
   .h-full {
     height: 100%;
   }
@@ -443,6 +452,12 @@
   }
   .object-cover {
     object-fit: cover;
+  }
+  .object-top-left {
+    object-position: left top;
+  }
+  .object-top-right {
+    object-position: right top;
   }
   .p-\[8px\] {
     padding: 8px;
@@ -658,9 +673,24 @@
       border-color: var(--color-primary);
     }
   }
+  .min-\[0px\]\:block {
+    @media (width >= 0px) {
+      display: block;
+    }
+  }
+  .min-\[86px\]\:hidden {
+    @media (width >= 86px) {
+      display: none;
+    }
+  }
   .min-\[390px\]\:grid-cols-2 {
     @media (width >= 390px) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .min-\[540px\]\:object-center {
+    @media (width >= 540px) {
+      object-position: center;
     }
   }
   .min-\[640px\]\:gap-x-\[16px\] {
@@ -681,6 +711,36 @@
   .min-\[800px\]\:flex {
     @media (width >= 800px) {
       display: flex;
+    }
+  }
+  .min-\[840px\]\:block {
+    @media (width >= 840px) {
+      display: block;
+    }
+  }
+  .min-\[840px\]\:hidden {
+    @media (width >= 840px) {
+      display: none;
+    }
+  }
+  .min-\[860px\]\:block {
+    @media (width >= 860px) {
+      display: block;
+    }
+  }
+  .min-\[860px\]\:hidden {
+    @media (width >= 860px) {
+      display: none;
+    }
+  }
+  .min-\[900px\]\:block {
+    @media (width >= 900px) {
+      display: block;
+    }
+  }
+  .min-\[900px\]\:hidden {
+    @media (width >= 900px) {
+      display: none;
     }
   }
   .min-\[940px\]\:flex-row {
@@ -748,9 +808,19 @@
       padding-top: 18px;
     }
   }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
+    }
+  }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
     }
   }
   .md\:gap-\[16px\] {
@@ -766,6 +836,11 @@
   .md\:pb-0 {
     @media (width >= 48rem) {
       padding-bottom: calc(var(--spacing) * 0);
+    }
+  }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
     }
   }
   .lg\:flex {
