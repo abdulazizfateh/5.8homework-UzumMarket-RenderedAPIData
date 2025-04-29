@@ -149,8 +149,8 @@ const renderCommentsData = (data) => {
                         <img id="cardImage" class="w-[100%] group-hover:scale-[1.02] duration-300 rounded-[8px] object-cover h-[309px]" src="${images[randomNum]}" alt="Product Image">
                     </div>
                     <div class="posts_body pt-[12px] flex flex-col flex-1 items-start p-[8px]">
-                        <p class="posts_title min-h-[50px] mb-[4px] font-I text-[12.8px] leading-[15.36px] text-primary-text line-clamp-2"><span class="font-[500]">Title:</span> ${item.name}</p>
-                        <p class="posts_title font-I text-[12.8px] leading-[15.36px] text-primary-text mb-[4px] line-clamp-4"><span class="font-[500]">Body:</span> ${item.body}</p>
+                        <p class="posts_title min-h-[50px] font-I text-[12.8px] leading-[15.36px] text-primary-text mb-[6px] line-clamp-2"><span class="font-[500]">Title:</span> ${item.name}</p>
+                        <p class="posts_title font-I text-[12.8px] leading-[15.36px] text-primary-text mb-[6px] line-clamp-4"><span class="font-[500]">Body:</span> ${item.body}</p>
                         <div class="posts_review_ranking flex items-center gap-[3.5px] mb-[8px]">
                          <img class="pb-[1px]" src="./assets/images/star.svg" alt="Star Icon">
                         <span class="font-I font-[300] text-[11.2px] leading-[11.2px] text-[#8B8E99]">4.8</span>
@@ -212,8 +212,12 @@ const renderUsersData = (data) => {
                         <img id="cardImage" class="w-[100%] group-hover:scale-[1.02] duration-300 rounded-[8px] object-cover h-[309px]" src="${images[randomNum]}" alt="Product Image">
                     </div>
                     <div class="posts_body pt-[12px] flex flex-col flex-1 items-start p-[8px]">
-                        <p class="posts_title min-h-[50px] mb-[4px] font-I text-[12.8px] leading-[15.36px] text-primary-text line-clamp-2"><span class="font-[500]">Title:</span> ${item.title}</p>
-                        <p class="posts_title font-I text-[12.8px] leading-[15.36px] text-primary-text mb-[4px] line-clamp-4"><span class="font-[500]">Body:</span> ${item.body}</p>
+                        <p class="posts_title font-I text-[12.8px] leading-[15.36px] text-primary-text mb-[6px] line-clamp-1"><span class="font-[500]">Name:</span> ${item.name}</p>
+                        <p class="posts_title font-I text-[12.8px] leading-[15.36px] text-primary-text mb-[6px] line-clamp-1"><span class="font-[500]">Username:</span> ${item.username}</p>
+                        <p class="posts_title font-I text-[12.8px] leading-[15.36px] text-primary-text mb-[6px] line-clamp-1"><span class="font-[500]">Email:</span> ${item.email}</p>
+                        <p class="posts_title font-I text-[12.8px] leading-[15.36px] text-primary-text mb-[6px] line-clamp-3"><span class="font-[500]">Address:</span> ${item.address.suite} ${item.address.street} ${item.address.city} ${item.address.zipcode} ${item.address.geo.lat}  ${item.address.geo.lng}</p>
+                        <p class="posts_title font-I text-[12.8px] leading-[15.36px] text-primary-text mb-[6px] line-clamp-1"><span class="font-[500]">Phone:</span> ${item.phone}</p>
+                        <p class="posts_title font-I text-[12.8px] leading-[15.36px] text-primary-text mb-[6px] line-clamp-1"><span class="font-[500]">Website:</span> ${item.website}</p>
                         <div class="posts_review_ranking flex items-center gap-[3.5px] mb-[8px]">
                          <img class="pb-[1px]" src="./assets/images/star.svg" alt="Star Icon">
                         <span class="font-I font-[300] text-[11.2px] leading-[11.2px] text-[#8B8E99]">4.8</span>
