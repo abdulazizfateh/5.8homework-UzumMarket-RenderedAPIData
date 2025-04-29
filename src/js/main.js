@@ -56,6 +56,8 @@ const getUsersData = async () => {
     }
 }
 
+
+
 const renderPostsData = (data) => {
     const fragment = document.createDocumentFragment()
     data.forEach((item, index) => {
@@ -87,7 +89,7 @@ const renderPostsData = (data) => {
                         <p class="posts_title min-h-[50px] mb-[4px] font-I text-[12.8px] leading-[15.36px] text-primary-text line-clamp-2"><span class="font-[500]">Title:</span> ${item.title}</p>
                         <p class="posts_title font-I text-[12.8px] leading-[15.36px] text-primary-text mb-[4px] line-clamp-4"><span class="font-[500]">Body:</span> ${item.body}</p>
                         <div class="posts_review_ranking flex items-center gap-[3.5px] mb-[8px]">
-                         <img class="pb-[1px]" src="./src/assets/images/star.svg" alt="Star Icon">
+                         <img class="pb-[1px]" src="./assets/images/star.svg" alt="Star Icon">
                         <span class="font-I font-[300] text-[11.2px] leading-[11.2px] text-[#8B8E99]">4.8</span>
                         <span class="font-I font-[300] text-[11.2px] leading-[11.2px] text-[#8B8E99]">(162 sharsh)</span>
                         </div>
@@ -97,7 +99,7 @@ const renderPostsData = (data) => {
                         <del class="font-I text-[11.2px] leading-[13.44px] text-[#8B8E99]">179 000 so'm</del>
                         <span class="font-I text-[14px] font-[500] leading-[16.8px] text-primary-text">55 000 so'm</span>
                     </div>
-                    <button class="flex items-center justify-center hover:bg-[#dee0e4] duration-300 ease-out size-[32px] border-[1px] border-[#36364033] rounded-[50%]"><img src="./src/assets/images/addcart.svg" alt="Add to cart icon"></button>
+                    <button class="flex items-center justify-center hover:bg-[#dee0e4] duration-300 ease-out size-[32px] border-[1px] border-[#36364033] rounded-[50%]"><img src="./assets/images/addcart.svg" alt="Add to cart icon"></button>
                 </div>
             </div>
         </div>
@@ -150,7 +152,7 @@ const renderCommentsData = (data) => {
                         <p class="posts_title min-h-[50px] mb-[4px] font-I text-[12.8px] leading-[15.36px] text-primary-text line-clamp-2"><span class="font-[500]">Title:</span> ${item.name}</p>
                         <p class="posts_title font-I text-[12.8px] leading-[15.36px] text-primary-text mb-[4px] line-clamp-4"><span class="font-[500]">Body:</span> ${item.body}</p>
                         <div class="posts_review_ranking flex items-center gap-[3.5px] mb-[8px]">
-                         <img class="pb-[1px]" src="./src/assets/images/star.svg" alt="Star Icon">
+                         <img class="pb-[1px]" src="./assets/images/star.svg" alt="Star Icon">
                         <span class="font-I font-[300] text-[11.2px] leading-[11.2px] text-[#8B8E99]">4.8</span>
                         <span class="font-I font-[300] text-[11.2px] leading-[11.2px] text-[#8B8E99]">(162 sharsh)</span>
                         </div>
@@ -160,7 +162,7 @@ const renderCommentsData = (data) => {
                         <del class="font-I text-[11.2px] leading-[13.44px] text-[#8B8E99]">179 000 so'm</del>
                         <span class="font-I text-[14px] font-[500] leading-[16.8px] text-primary-text">55 000 so'm</span>
                     </div>
-                    <button class="flex items-center justify-center hover:bg-[#dee0e4] duration-300 ease-out size-[32px] border-[1px] border-[#36364033] rounded-[50%]"><img src="./src/assets/images/addcart.svg" alt="Add to cart icon"></button>
+                    <button class="flex items-center justify-center hover:bg-[#dee0e4] duration-300 ease-out size-[32px] border-[1px] border-[#36364033] rounded-[50%]"><img src="./assets/images/addcart.svg" alt="Add to cart icon"></button>
                 </div>
             </div>
         </div>
@@ -213,7 +215,7 @@ const renderUsersData = (data) => {
                         <p class="posts_title min-h-[50px] mb-[4px] font-I text-[12.8px] leading-[15.36px] text-primary-text line-clamp-2"><span class="font-[500]">Title:</span> ${item.title}</p>
                         <p class="posts_title font-I text-[12.8px] leading-[15.36px] text-primary-text mb-[4px] line-clamp-4"><span class="font-[500]">Body:</span> ${item.body}</p>
                         <div class="posts_review_ranking flex items-center gap-[3.5px] mb-[8px]">
-                         <img class="pb-[1px]" src="./src/assets/images/star.svg" alt="Star Icon">
+                         <img class="pb-[1px]" src="./assets/images/star.svg" alt="Star Icon">
                         <span class="font-I font-[300] text-[11.2px] leading-[11.2px] text-[#8B8E99]">4.8</span>
                         <span class="font-I font-[300] text-[11.2px] leading-[11.2px] text-[#8B8E99]">(162 sharsh)</span>
                         </div>
@@ -223,7 +225,7 @@ const renderUsersData = (data) => {
                         <del class="font-I text-[11.2px] leading-[13.44px] text-[#8B8E99]">179 000 so'm</del>
                         <span class="font-I text-[14px] font-[500] leading-[16.8px] text-primary-text">55 000 so'm</span>
                     </div>
-                    <button class="flex items-center justify-center hover:bg-[#dee0e4] duration-300 ease-out size-[32px] border-[1px] border-[#36364033] rounded-[50%]"><img src="./src/assets/images/addcart.svg" alt="Add to cart icon"></button>
+                    <button class="flex items-center justify-center hover:bg-[#dee0e4] duration-300 ease-out size-[32px] border-[1px] border-[#36364033] rounded-[50%]"><img src="./assets/images/addcart.svg" alt="Add to cart icon"></button>
                 </div>
             </div>
         </div>
