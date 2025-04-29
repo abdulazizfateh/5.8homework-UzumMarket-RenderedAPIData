@@ -275,8 +275,11 @@
   .h-\[309px\] {
     height: 309px;
   }
-  .min-h-\[20px\] {
-    min-height: 20px;
+  .h-\[400px\] {
+    height: 400px;
+  }
+  .h-full {
+    height: 100%;
   }
   .min-h-\[32px\] {
     min-height: 32px;
@@ -323,9 +326,6 @@
   }
   .items-start {
     align-items: flex-start;
-  }
-  .justify-baseline {
-    justify-content: baseline;
   }
   .justify-between {
     justify-content: space-between;
@@ -384,11 +384,11 @@
   .gap-\[32px\] {
     gap: 32px;
   }
-  .gap-x-\[20px\] {
-    column-gap: 20px;
+  .gap-x-\[12px\] {
+    column-gap: 12px;
   }
-  .gap-y-\[32px\] {
-    row-gap: 32px;
+  .gap-y-\[16px\] {
+    row-gap: 16px;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -435,17 +435,8 @@
   .bg-\[\#FFFF00\] {
     background-color: #FFFF00;
   }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
-  }
-  .bg-amber-500 {
-    background-color: var(--color-amber-500);
-  }
   .bg-primary-bg {
     background-color: var(--color-primary-bg);
-  }
-  .bg-red-100 {
-    background-color: var(--color-red-100);
   }
   .bg-secondary-bg {
     background-color: var(--color-secondary-bg);
@@ -672,6 +663,16 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .min-\[640px\]\:gap-x-\[16px\] {
+    @media (width >= 640px) {
+      column-gap: 16px;
+    }
+  }
+  .min-\[640px\]\:gap-y-\[24px\] {
+    @media (width >= 640px) {
+      row-gap: 24px;
+    }
+  }
   .min-\[700px\]\:grid-cols-3 {
     @media (width >= 700px) {
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -702,6 +703,16 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
+  .min-\[1024px\]\:gap-x-\[20px\] {
+    @media (width >= 1024px) {
+      column-gap: 20px;
+    }
+  }
+  .min-\[1024px\]\:gap-y-\[32px\] {
+    @media (width >= 1024px) {
+      row-gap: 32px;
+    }
+  }
   .min-\[1080px\]\:flex {
     @media (width >= 1080px) {
       display: flex;
@@ -715,6 +726,11 @@
   .sm\:flex {
     @media (width >= 40rem) {
       display: flex;
+    }
+  }
+  .sm\:h-\[400px\] {
+    @media (width >= 40rem) {
+      height: 400px;
     }
   }
   .sm\:grid-cols-2 {
